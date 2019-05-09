@@ -24,7 +24,7 @@ Project ERROR: Library ‘mysql’ is not defined.
 qtsqldrivers-config.pri没找到
 
 将` ~/Qt5.12.3/5.12.3/Src/qtbase/src/plugins/sqldrivers/qsqldriverbase.pri进行修改如下`
-`
+```
 QT  = core core-private sql-private
 
 # For QMAKE_USE in the parent projects.
@@ -35,7 +35,7 @@ PLUGIN_TYPE = sqldrivers
 load(qt_plugin)
 
 DEFINES += QT_NO_CAST_TO_ASCII QT_NO_CAST_FROM_ASCII
-`
+```
 3.执行:
 
 `make`
